@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// System Health Check
+// System Health 
 app.get('/health', (req: Request, res: Response) => {
   res.status(200).json({
     status: 'healthy',
